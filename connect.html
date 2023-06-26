@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steve Kays - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header> 
         <nav> 
-            <ul> 
-                <li><a href="index.html">Steve Kays</a></li>
-                <li><a href="about me.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="connect.html">Connect</a></li>
-            </ul>
+        <div>
+            <a href="index.html">Steve Kays</a>
+        </div>
+        <div class="nav">
+            <a href="about-me.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="connect.html">Connect</a>
+        </div>
         </nav>
     </header>
     <main> 
-      <div> 
-        <h2> Say Hi!</h2>
-        <p> Have any questions for me? Want to learn more about the skills that I've acquired from working in a library environment? Want to know more about what kind of work I've been focusing on in grad school? Or perhaps just say hi? I would love to hear from you in any of those circumstances. Feel free to use this form on the right if you so desire.</p>
-      </div>
-      <div> 
-        <form action="/action_page.php">
+      <div class="image-with-text"> 
+        <div class="text">
+            <h2> Say Hi!</h2>
+            <p> Have any questions for me? Want to learn more about the skills that I've acquired from working in a library environment? Want to know more about what kind of work I've been focusing on in grad school? Or perhaps just say hi? I would love to hear from you in any of those circumstances. Feel free to use this form on the right if you so desire.</p>
+        </div>
+        <form>
             <legend><b>Contact</b></legend>
             <input type="text" name="fullname" placeholder="Full name">
             <input type="text" name="email" placeholder="Email">
@@ -37,7 +41,10 @@
         </div>
         <div> 
             <a href="mailto:steveckays@gmail.com">Send Email</a> 
-        </div>    
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100080221086717"><i  class="fa-brands fa-facebook"></i></a>
+        </div>     
     </footer>
 </body>
 </html>
