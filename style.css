@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1rem;
     background-color: lightskyblue;
     color: black;
     font-family:Arial, Helvetica, sans-serif;
@@ -13,8 +14,16 @@
  }
 
 div.nav {
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     background-color: lightskyblue;
+}
+
+.nav a {
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 a.navbar{
@@ -39,6 +48,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .image-with-text .general-picture {
@@ -47,8 +57,11 @@ main {
 
 
 div.text {
-    float: left;
     width: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 div.visual {
@@ -102,7 +115,7 @@ h2.portfolio{
     font-size: 125%;
 }
 
-h3.blurb{
+h2.blurb{
     text-align: center;
     color: black;
     font-family:Arial, Helvetica, sans-serif;
@@ -152,7 +165,7 @@ textarea {
 }
 
 [type="submit"] {
-    width: 50%;
+    width: 100%;
     background: #04AA6D;
     color: white;
     border-radius: 4px;
